@@ -388,30 +388,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .nav__menu {
-    position: fixed;
+    display: none;
+    position: absolute;
     top: var(--nav-height);
     left: 0;
     right: 0;
-    bottom: 0;
+    flex-direction: column;
+    align-items: stretch;
     background: var(--color-nav-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
-    padding: 24px;
-    flex-direction: column;
-    align-items: stretch;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform var(--transition), opacity var(--transition);
+    padding: 16px 24px 24px;
+    box-shadow: 0 8px 24px var(--color-shadow-lg);
     z-index: 999;
     overflow-y: auto;
+    max-height: calc(100vh - var(--nav-height));
   }
 
   .nav__menu.is-open {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+    display: flex;
   }
 
   .nav__links {
