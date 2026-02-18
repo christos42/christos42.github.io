@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
   z-index: 1000;
+  overflow: visible;
   transition: box-shadow var(--transition);
 }
 
@@ -389,19 +390,17 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav__menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: var(--nav-height);
     left: 0;
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: var(--color-nav-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
     padding: 16px 24px 24px;
     box-shadow: 0 8px 24px var(--color-shadow-lg);
-    z-index: 999;
+    z-index: 1001;
     overflow-y: auto;
     max-height: calc(100vh - var(--nav-height));
   }
