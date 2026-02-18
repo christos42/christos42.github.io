@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# JetBrains IDE
+.idea/
+
+# VS Code
+.vscode/
+
+# Node (in case of future tooling)
+node_modules/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
