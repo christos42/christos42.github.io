@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /.git/
+Disallow: /.idea/
+
+Sitemap: https://christos42.github.io/sitemap.xml
